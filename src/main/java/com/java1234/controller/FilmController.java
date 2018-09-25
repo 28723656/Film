@@ -43,7 +43,7 @@ public class FilmController {
 		ModelAndView mav=new ModelAndView();
 		if(bindingResult.hasErrors()){
 			mav.addObject("error", bindingResult.getFieldError().getDefaultMessage());
-			mav.addObject("title", "首页");
+			mav.addObject("title", "首页  ");
 			mav.addObject("mainPage", "film/indexFilm");
 			mav.addObject("mainPageKey", "#f");
 			mav.setViewName("index");
